@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #f5e6ff;" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomeController">
+   <children>
+      <TextField fx:id="user_name" layoutX="405.0" layoutY="258.0" prefHeight="41.0" prefWidth="248.0" promptText="user name" style="-fx-background-color: #f5e6ff; -fx-border-color: #d699ff;">
+         <stylesheets>
+            <URL value="@style.css" />
+            <URL value="@style.css" />
+         </stylesheets></TextField>
+      <PasswordField fx:id="password" layoutX="405.0" layoutY="327.0" prefHeight="41.0" prefWidth="248.0" promptText="Password" style="-fx-border-color: #d699ff; -fx-background-color: #f5e6ff;" stylesheets="@style.css">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></PasswordField>
+      <AnchorPane prefHeight="83.0" prefWidth="700.0" style="-fx-background-color: #ebccff;">
+         <children>
+            <Label layoutX="493.0" layoutY="16.0" prefHeight="52.0" prefWidth="193.0" text="Bienvenue" textFill="#4c0080">
+               <font>
+                  <Font name="Britannic Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="310.0" layoutY="133.0" orientation="VERTICAL" prefHeight="405.0" prefWidth="13.0" style="-fx-background-color: #f5e6ff;" />
+      <Line endX="-11.0" layoutX="236.0" layoutY="267.0" startX="-100.0" stroke="#f215f2" />
+      <Line endX="-13.0" layoutX="201.0" layoutY="279.0" startX="-100.0" stroke="#22041e" />
+      <Label layoutX="117.0" layoutY="212.0" prefHeight="47.0" prefWidth="193.0" text="Revues" textFill="#b51ba6">
+         <font>
+            <Font name="Blackadder ITC" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="281.0" prefHeight="38.0" prefWidth="118.0" text="Systématiques " textFill="#0a050a">
+         <font>
+            <Font name="Blackadder ITC" size="23.0" />
+         </font>
+      </Label>
+      <Line endX="-11.0" layoutX="236.0" layoutY="335.0" startX="-100.0" stroke="#f215f2" />
+      <Line endX="-13.0" layoutX="201.0" layoutY="327.0" startX="-100.0" stroke="#22041e" />
+      <JFXButton layoutX="464.0" layoutY="405.0" onAction="#login" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: #ebccff;" text="Se connecter" textFill="#4c0080">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="405.0" layoutY="200.0" prefHeight="25.0" prefWidth="270.0" text="commencez votre recherche !" textFill="#4c0080">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="83.0" />
+      <Label layoutX="21.0" layoutY="538.0" prefHeight="25.0" prefWidth="193.0" text="Vous n'avez pas un compte ?" />
+      <JFXButton layoutX="189.0" layoutY="538.0" onAction="#Signup" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #ebccff;" text="S'inscrire" textFill="#4c0080">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="69.0" fitWidth="73.0" layoutX="626.0" layoutY="528.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/48391851_2321682214726958_2971587945393291264_n.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="56.0" layoutX="345.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/admin.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="69.0" layoutX="345.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/lock-2.png" />
+         </image>
+      </ImageView>
+      
+   </children>
+</AnchorPane>

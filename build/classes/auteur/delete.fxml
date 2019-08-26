@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.validation.RequiredFieldValidator?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="1059.0" style="-fx-background-color: #f5e6ff;" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DeleteController">
+   <children>
+      <TableView fx:id="table" layoutY="66.0" prefHeight="406.0" prefWidth="1059.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="30.0" text="ID" />
+            <TableColumn fx:id="titre" prefWidth="59.0" text="titre" />
+            <TableColumn fx:id="date_publication" prefWidth="107.0" text="date_publication" />
+            <TableColumn fx:id="doi" prefWidth="87.0" text="doi" />
+            <TableColumn fx:id="abstrait" prefWidth="169.0" text="abstrait" />
+            <TableColumn fx:id="idee_principale" prefWidth="121.0" text="idee_principale" />
+            <TableColumn fx:id="id_journal" prefWidth="75.0" text="id_journal" />
+            <TableColumn fx:id="id_conference" prefWidth="124.0" text="id_conference" />
+            <TableColumn fx:id="Mot_clé" prefWidth="130.0" text="Mot_clé" />
+            <TableColumn fx:id="Drive" prefWidth="153.0" text="Drive" />
+         </columns>
+      </TableView>
+      <RequiredFieldValidator layoutX="906.0" layoutY="113.0" />
+      <JFXButton fx:id="logout" layoutX="991.0" layoutY="8.0" onAction="#logout" prefHeight="54.0" prefWidth="62.0" text="." />
+      <JFXButton fx:id="delete" layoutX="767.0" layoutY="19.0" onAction="#delete" prefHeight="39.0" prefWidth="119.0" style="-fx-background-color: #ebccff;" text="supprimer" textFill="#552857">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="68.0" layoutY="16.0" prefHeight="39.0" prefWidth="693.0" text="Pour supprimer un article sélectionnez la ligne qui lui correspondant et appuiyez sur &quot;supprimer&quot;" textFill="#570d4d">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="precedent" layoutX="6.0" layoutY="6.0" onAction="#precedent" prefHeight="54.0" prefWidth="62.0" text="." />
+      <ImageView fitHeight="46.0" fitWidth="50.0" layoutX="12.0" layoutY="12.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/previous.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="999.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logout.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

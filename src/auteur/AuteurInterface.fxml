@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.validation.RequiredFieldValidator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="1014.0" style="-fx-background-color: #f5e6ff;" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AuteurController">
+   <children>
+      <TableView fx:id="table" layoutY="71.0" prefHeight="421.0" prefWidth="1014.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="40.0" text="ID" />
+            <TableColumn fx:id="titre" prefWidth="100.0" text="titre" />
+            <TableColumn fx:id="date_publication" prefWidth="100.0" text="date_publication" />
+            <TableColumn fx:id="doi" prefWidth="100.0" text="doi" />
+            <TableColumn fx:id="abstrait" prefWidth="171.0" text="abstrait" />
+            <TableColumn fx:id="idee_principale" prefWidth="118.0" text="idee_principale" />
+            <TableColumn fx:id="id_journal" prefWidth="61.0" text="id_journal" />
+            <TableColumn fx:id="id_conference" prefWidth="96.0" text="id_conference" />
+            <TableColumn fx:id="Mot_clé" prefWidth="79.0" text="Mot_clé" />
+            <TableColumn fx:id="Drive" prefWidth="148.0" text="Drive " />
+        </columns>
+      </TableView>
+      <RequiredFieldValidator layoutX="906.0" layoutY="113.0" />
+      <JFXButton fx:id="logout" layoutX="918.0" prefHeight="72.0" prefWidth="96.0" ripplerFill="WHITE" text="." />
+      <JFXButton fx:id="precedent" layoutX="2.0" layoutY="1.0" onAction="#precedent" prefHeight="63.0" prefWidth="82.0" text="." />
+      <ImageView fitHeight="56.0" fitWidth="54.0" layoutX="946.0" layoutY="10.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logout.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="82.0" layoutX="10.0" layoutY="14.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/previous.png" />
+         </image>
+      </ImageView>
+     
+   </children>
+
+</AnchorPane>

@@ -1,0 +1,85 @@
+
+
+.text-field:focused {
+    -fx-text-box-border:#FFFFFF;
+}
+
+.button
+{
+    -fx-border-radius: 4px;	
+}
+
+.text-field
+{
+	  -fx-prompt-text-fill: #465058;
+	  -fx-text-inner-color:#000000;
+	  -fx-font-size:15px;
+	  -fx-border-radius: 4px;
+
+}
+
+#new_article{
+	-fx-font-size: 15px;
+}
+
+
+#root{
+		-fx-background-color: #DCDCDC;
+}
+
+#text{
+   -fx-text-fill: black;
+	
+}
+
+#delete{
+   -fx-text-fill: black;
+}
+
+#field_abstrait{
+	-fx-text-fill: black;
+}
+
+#field_idee_principale{
+	-fx-text-fill: black;
+}
+
+#field_solution{
+	-fx-text-fill: black;
+}
+
+#field_doi{
+	-fx-text-fill: black;
+}
+
+#field_date_pub{
+	-fx-text-fill: black;
+}
+
+#field_titre{
+	-fx-text-fill: black;
+}
+
+#field_num_ordre{
+	-fx-text-fill: black;
+}
+
+#field_evaluation_qualite{
+	-fx-text-fill: black;
+}
+
+#field_id_journal{
+	-fx-text-fill: black;
+}
+
+#field_id_conference{
+	-fx-text-fill: black;
+}
+
+#valeur{
+	-fx-text-fill: black;
+}
+
+#id_conference{
+	-fx-text-fill: black;
+}

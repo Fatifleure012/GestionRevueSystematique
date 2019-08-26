@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="814.0" style="-fx-background-color: #f5e6ff;" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CreerArticleController">
+   <children>
+      <Text fill="#4c0080" layoutX="50.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="titre" wrappingWidth="98.5488189458847">
+         <font>
+            <Font name="Calibri" size="25.0" />
+         </font></Text>
+      <Text fill="#4c0080" layoutX="44.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="date publication" wrappingWidth="110.548828125">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font></Text>
+      <Text fill="#4c0080" layoutX="44.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="doi" wrappingWidth="98.548828125">
+         <font>
+            <Font size="27.0" />
+         </font></Text>
+      <Text fill="#4c0080" layoutX="348.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="idee principale" wrappingWidth="150.548828125">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font></Text>
+      <Text fill="#4c0080" layoutX="44.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="id journal" wrappingWidth="98.5488189458847">
+         <font>
+            <Font name="Calibri" size="25.0" />
+         </font></Text>
+      <Text fill="#4c0080" layoutX="44.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="id  conference" wrappingWidth="163.54882061481476">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font></Text>
+      <Text fill="#4c0080" layoutX="354.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="abstrait" wrappingWidth="80.00000303983688">
+         <font>
+            <Font name="Calibri" size="25.0" />
+         </font></Text>
+      <Text fx:id="new_article" layoutX="243.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Créer un nouveau article" wrappingWidth="360.9999930560589">
+         <font>
+            <Font name="Calibri" size="35.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="field_titre" focusColor="#dda3d4" layoutX="187.0" layoutY="178.0">
+         <unFocusColor>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#280423" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </unFocusColor></JFXTextField>
+      <JFXTextField fx:id="field_date_pub" focusColor="#dda3d4" layoutX="187.0" layoutY="248.0">
+         <unFocusColor>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </unFocusColor></JFXTextField>
+      <JFXTextField fx:id="field_doi" focusColor="#dda3d4" layoutX="187.0" layoutY="319.0">
+         <unFocusColor>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#280423" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </unFocusColor></JFXTextField>
+      <JFXTextField fx:id="field_idee_principale" focusColor="#dda3d4" labelFloat="true" layoutX="522.0" layoutY="265.0" prefHeight="51.0" prefWidth="244.0">
+         <unFocusColor>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#280423" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </unFocusColor></JFXTextField>
+      <JFXTextField fx:id="field_abstrait" focusColor="#dda3d4" layoutX="522.0" layoutY="156.0" prefHeight="69.0" prefWidth="244.0">
+         <unFocusColor>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#280423" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </unFocusColor></JFXTextField>
+      <JFXTextField fx:id="field_id_conference" focusColor="#dda3d4" layoutX="187.0" layoutY="375.0">
+         <unFocusColor>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#280423" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </unFocusColor></JFXTextField>
+      <JFXTextField fx:id="field_id_journal" focusColor="#dda3d4" layoutX="187.0" layoutY="451.0">
+         <unFocusColor>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#280423" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </unFocusColor></JFXTextField>
+      <AnchorPane prefHeight="80.0" prefWidth="814.0" style="-fx-background-color: #ebccff;">
+         <children>
+            <JFXButton fx:id="logout" layoutX="725.0" layoutY="5.0" prefHeight="61.0" prefWidth="65.0" text="." />
+            <ImageView fitHeight="61.0" fitWidth="80.0" layoutX="737.0" layoutY="10.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logout.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="precedent" layoutX="14.0" layoutY="10.0" onAction="#precedent" prefHeight="61.0" prefWidth="80.0" text="." />
+            <ImageView fitHeight="43.0" fitWidth="49.0" layoutX="33.0" layoutY="19.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/previous.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="343.0" layoutY="158.0" orientation="VERTICAL" prefHeight="280.0" prefWidth="0.0" />
+      <ImageView fitHeight="69.0" fitWidth="62.0" layoutX="180.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/48391851_2321682214726958_2971587945393291264_n.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="save" layoutX="90.0" layoutY="502.0" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #ebccff;" text="Save">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="field_url" focusColor="#dda3d4" layoutX="546.0" layoutY="476.0" prefHeight="43.0" prefWidth="211.0">
+         <unFocusColor>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#280423" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </unFocusColor>
+      </JFXTextField>
+      <Text fill="#4c0080" layoutX="371.0" layoutY="522.0" strokeType="OUTSIDE" strokeWidth="0.0" text="URL du drive" wrappingWidth="150.548828125">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#4c0080" layoutX="371.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot Clé " wrappingWidth="150.548828125">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="field_Mot_Clé" focusColor="#dda3d4" layoutX="552.0" layoutY="436.0" prefHeight="25.0" prefWidth="200.0">
+         <unFocusColor>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#280423" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </unFocusColor>
+      </JFXTextField>
+   </children>
+</AnchorPane>

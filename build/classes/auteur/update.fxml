@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.validation.RequiredFieldValidator?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="1350.0" style="-fx-background-color: #f5e6ff;" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UpdateController">
+   <children>
+      <TableView fx:id="table" layoutY="5.0" prefHeight="547.0" prefWidth="695.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="30.0" text="ID" />
+            <TableColumn fx:id="titre" prefWidth="59.0" text="titre" />
+            <TableColumn fx:id="date_publication" prefWidth="107.0" text="date_publication" />
+            <TableColumn fx:id="doi" prefWidth="36.0" text="doi" />
+            <TableColumn fx:id="abstrait" prefWidth="53.0" text="abstrait" />
+            <TableColumn fx:id="idee_principale" prefWidth="109.0" text="idee_principale" />
+            <TableColumn fx:id="id_journal" prefWidth="60.0" text="id_journal" />
+            <TableColumn fx:id="id_conference" prefWidth="83.0" text="id_conference" />
+            <TableColumn fx:id="Mot_clé" prefWidth="83.0" text="Mot_clé" />
+            <TableColumn fx:id="Drive" prefWidth="72.0" text="Drive" />
+        </columns>
+      </TableView>
+      <Text fx:id="new_article" fill="#a42397" layoutX="938.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifier l'article" wrappingWidth="233.24609375">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font></Text>
+      <RequiredFieldValidator layoutX="913.0" layoutY="113.0" />
+      <TextField fx:id="field_date_pub" layoutX="848.0" layoutY="180.0" />
+      <TextField fx:id="field_titre" layoutX="848.0" layoutY="121.0" />
+      <TextField fx:id="field_doi" layoutX="857.0" layoutY="242.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="field_id_journal" layoutX="1182.0" layoutY="120.0" />
+      <TextField fx:id="field_id_conference" layoutX="1182.0" layoutY="165.0" />
+      <Text layoutX="762.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="titre" wrappingWidth="66.548828125" />
+      <Text layoutX="741.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="doi" wrappingWidth="66.548828125" />
+      <Text layoutX="705.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="date publication" wrappingWidth="89.548828125" />
+      <Text layoutX="1090.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="id de conference" wrappingWidth="66.548828125" />
+      <Text layoutX="1090.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="id de journal" wrappingWidth="66.548828125" />
+      <Text layoutX="717.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="idee principale" wrappingWidth="89.54882654361427" />
+      <TextArea fx:id="field_idee_principale" layoutX="875.0" layoutY="358.0" prefHeight="50.0" prefWidth="149.0" />
+      <Text layoutX="1081.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="abstrait" wrappingWidth="66.548828125" />
+      <TextArea fx:id="field_abstrait" layoutX="1156.0" layoutY="224.0" prefHeight="203.0" prefWidth="180.0" />
+      <JFXButton layoutX="1317.0" layoutY="19.0" prefHeight="32.0" prefWidth="28.0" text="." />
+      <JFXButton fx:id="precedent" layoutX="725.0" layoutY="13.0" onAction="#precedent" prefHeight="50.0" prefWidth="74.0" text="." />
+      <ImageView fitHeight="42.0" fitWidth="55.0" layoutX="741.0" layoutY="17.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/previous.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="logout" layoutX="1246.0" layoutY="10.0" onAction="#logout" prefHeight="73.0" prefWidth="90.0" text="." />
+      <ImageView fitHeight="50.0" fitWidth="67.0" layoutX="1279.0" layoutY="26.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logout.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="750.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Drive" wrappingWidth="89.54882654361427" />
+      <TextArea fx:id="field_Drive" layoutX="857.0" layoutY="436.0" prefHeight="73.0" prefWidth="200.0" />
+      <Button fx:id="update" layoutX="1144.0" layoutY="484.0" mnemonicParsing="false" text="Update" />
+      <TextField fx:id="field_Mot_clé" layoutX="864.0" layoutY="294.0" prefHeight="25.0" prefWidth="149.0" />
+      <Text layoutX="741.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot_clé " wrappingWidth="66.548828125" />
+     
+   </children>
+
+</AnchorPane>

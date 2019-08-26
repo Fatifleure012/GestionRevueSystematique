@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="795.0" style="-fx-background-color: #f5e6ff;" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home1Controller">
+   <children>
+      <JFXButton fx:id="chercher" layoutX="334.0" layoutY="236.0" onAction="#chercher" prefHeight="75.0" prefWidth="336.0" style="-fx-background-color: #ebccff;" text="Chercher un article" textFill="#7c49a1">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="home" layoutX="334.0" layoutY="352.0" onAction="#ome" prefHeight="75.0" prefWidth="349.0" style="-fx-background-color: #ebccff;" text="Accéder à mes articles" textFill="#7c49a1">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="425.0" layoutY="155.0" text="Voulez-vous?" textFill="#36072c" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font name="Bell MT" size="28.0" />
+         </font>
+      </Label>
+      <Pane prefHeight="75.0" prefWidth="795.0" style="-fx-background-color: #ebccff;">
+         <children>
+            <Label layoutX="26.0" prefHeight="52.0" prefWidth="193.0" text="Bienvenue" textFill="#4c0080">
+               <font>
+                  <Font name="Britannic Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="173.0" layoutY="35.0" prefHeight="40.0" prefWidth="116.0" text="cher auteur" textFill="#4c0080">
+               <font>
+                  <Font name="Arabic Typesetting" size="30.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="logout" layoutX="703.0" layoutY="9.0" onAction="#logout" prefHeight="52.0" prefWidth="67.0" text="." />
+            <ImageView fitHeight="61.0" fitWidth="64.0" layoutX="723.0" layoutY="11.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logout.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Separator layoutX="292.0" layoutY="117.0" orientation="VERTICAL" prefHeight="363.0" prefWidth="1.0" />
+      <Line endX="72.0" layoutX="522.0" layoutY="189.0" startX="-100.0" />
+      <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="740.0" layoutY="491.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/48391851_2321682214726958_2971587945393291264_n.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="80.0" layoutY="202.0" prefHeight="34.0" prefWidth="102.0" text="Revues" textFill="#b51ba6">
+         <font>
+            <Font name="Blackadder ITC" size="28.0" />
+         </font>
+      </Label>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="795.0" style="-fx-background-color: #f5e6ff;">
+         <children>
+            <JFXButton fx:id="chercher" layoutX="334.0" layoutY="236.0" onAction="#chercher" prefHeight="75.0" prefWidth="336.0" style="-fx-background-color: #ebccff;" text="Chercher un article" textFill="#7c49a1">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ome" layoutX="334.0" layoutY="352.0" onAction="#ome" prefHeight="75.0" prefWidth="349.0" style="-fx-background-color: #ebccff;" text="Accéder à mes articles" textFill="#7c49a1">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="425.0" layoutY="155.0" text="Voulez-vous?" textFill="#36072c" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="Bell MT" size="28.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="75.0" prefWidth="795.0" style="-fx-background-color: #ebccff;">
+               <children>
+                  <Label layoutX="26.0" prefHeight="52.0" prefWidth="193.0" text="Bienvenue" textFill="#4c0080">
+                     <font>
+                        <Font name="Britannic Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="173.0" layoutY="35.0" prefHeight="40.0" prefWidth="116.0" text="cher auteur" textFill="#4c0080">
+                     <font>
+                        <Font name="Arabic Typesetting" size="30.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="logout" layoutX="703.0" layoutY="9.0" onAction="#logout" prefHeight="52.0" prefWidth="67.0" text="." />
+                  <ImageView fitHeight="61.0" fitWidth="64.0" layoutX="723.0" layoutY="11.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logout.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Separator layoutX="292.0" layoutY="117.0" orientation="VERTICAL" prefHeight="363.0" prefWidth="1.0" />
+            <Line endX="72.0" layoutX="522.0" layoutY="189.0" startX="-100.0" />
+            <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="740.0" layoutY="491.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/48391851_2321682214726958_2971587945393291264_n.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="80.0" layoutY="202.0" prefHeight="34.0" prefWidth="102.0" text="Revues" textFill="#b51ba6">
+               <font>
+                  <Font name="Blackadder ITC" size="28.0" />
+               </font>
+            </Label>
+            <Line endX="-11.0" layoutX="216.0" layoutY="260.0" startX="-100.0" stroke="#f215f2" />
+            <Line endX="-13.0" layoutX="188.0" layoutY="273.0" startX="-100.0" stroke="#22041e" />
+            <Label layoutX="88.0" layoutY="280.0" prefHeight="38.0" prefWidth="118.0" text="Systématiques " textFill="#0a050a">
+               <font>
+                  <Font name="Blackadder ITC" size="23.0" />
+               </font>
+            </Label>
+            <Line endX="-13.0" layoutX="188.0" layoutY="330.0" startX="-100.0" stroke="#22041e" />
+            <Line endX="-11.0" layoutX="212.0" layoutY="350.0" startX="-100.0" stroke="#f215f2" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

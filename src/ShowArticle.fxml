@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="626.0" style="-fx-background-color: #f5e6ff;" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ShowArticleController">
+   <children>
+      <Text layoutX="19.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID                          :" wrappingWidth="101.712890625">
+         <font>
+            <Font name="Arial Narrow" size="14.0" />
+         </font></Text>
+      <Text fx:id="text_id" layoutX="165.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="417.13671469915425" />
+      <Text layoutX="15.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="titre                  :" wrappingWidth="108.474609375">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="doi       :" textAlignment="CENTER" wrappingWidth="101.71288847923279">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text fx:id="text_date" layoutX="155.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="423.13671875" />
+      <Text fx:id="text_titre" layoutX="158.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="417.13671684265137" />
+      <Text layoutX="9.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="date de publication  :" wrappingWidth="134.7128884792328">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="abstrait :" textAlignment="CENTER" wrappingWidth="101.712890625" />
+      <Text layoutX="19.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="idee principale :" />
+      <Text fx:id="text_doi" layoutX="155.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="430.1367187500001" />
+      <TextArea fx:id="text_abstrait" layoutX="152.0" layoutY="272.0" prefHeight="40.0" prefWidth="430.0" />
+      <TextArea fx:id="text_idee" layoutX="152.0" layoutY="330.0" prefHeight="38.0" prefWidth="430.0" />
+      <Text layoutX="33.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Drive  :" />
+      <TextArea fx:id="text_Drive" layoutX="155.0" layoutY="390.0" prefHeight="37.0" prefWidth="430.0" />
+      <Text layoutX="9.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot Clé   :" textAlignment="CENTER" wrappingWidth="83.41407179832458" />
+      <Text fx:id="text_Mot_clé" layoutX="155.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="430.1367223262787" />
+      <Text layoutX="15.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom auteur   :" wrappingWidth="108.474609375">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="text_nom" layoutX="144.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="417.13671684265137" />
+   </children>
+</AnchorPane>
